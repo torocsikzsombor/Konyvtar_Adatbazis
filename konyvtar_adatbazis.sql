@@ -30,3 +30,11 @@ CREATE TABLE IF NOT EXISTS olvasok(
     aktiv ENUM('igen', 'nem') NOT NULL DEFAULT 'nem',
     regisztracio_idopontja DATE TIME NOT NULL
 );
+
+-- 6.feladat
+
+CHECK konyvek
+
+-- 7.feladat
+
+SHOW CREATE TABLE olvasok;
