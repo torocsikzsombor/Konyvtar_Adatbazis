@@ -1,12 +1,13 @@
+--2.feladat--
 DROP DATABASE IF EXISTS videotekaadatbazis;
 CREATE DATABASE videotekaadatbazis
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_hungarian_ci;
 
-
+--3.feladat--
 USE videotekaadatbazis;
 
-
+--4.feladat--
 CREATE TABLE filmek (
     id INT AUTO_INCREMENT PRIMARY KEY,
     cim VARCHAR(150) NOT NULL UNIQUE,
@@ -17,7 +18,7 @@ CREATE TABLE filmek (
     imdb_ertekeles FLOAT DEFAULT 6.5
 ) CHARACTER SET utf8mb4 COLLATE utf8mb4_hungarian_ci;
 
-
+--5.feladat--
 CREATE TABLE kolcsonzok (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nev VARCHAR(100) NOT NULL,
@@ -27,8 +28,8 @@ CREATE TABLE kolcsonzok (
     regisztracio DATETIME DEFAULT CURRENT_TIMESTAMP
 ) CHARACTER SET utf8mb4 COLLATE utf8mb4_hungarian_ci;
 
-
+--6.feladat--
 DESCRIBE filmek;
 
-
+--7.feladat--
 SHOW CREATE TABLE kolcsonzok;
