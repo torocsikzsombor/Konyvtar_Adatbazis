@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS olvasok(
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     nev VARCHAR(100) NOT NULL,
     szuletesi_datum DATE,
-    varos VARCHAR(50),, 
+    varos VARCHAR(50), 
     aktiv ENUM('igen', 'nem') NOT NULL DEFAULT 'nem',
     regisztracio_idopontja DATE TIME NOT NULL
 );
