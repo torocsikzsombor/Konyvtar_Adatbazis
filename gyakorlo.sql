@@ -53,3 +53,32 @@ WHERE korhatar IN (16,18);
 
 SELECT * FROM filmek
 ORDER BY megjelenesi_ev ASC
+
+
+--Insert Feladatok
+
+--1 feladat
+
+INSERT INTO filmek (cim, rendezo, megjelenesi_ev, hossz, korhatar, ertekeles)
+VALUES ('ToyStory 4', 'Josh Cooley', 2019, 100, "0", 8.7);
+
+
+--2 feladat
+
+INSERT INTO szineszek (nev, szuletesi_datum, nemzetiseg, aktiv)
+VALUES
+("tgyb", "ggg", 2000, 200, "12", 8.7),
+
+
+UPDATE filmek
+SET rendezo = "Joe Ranft"
+WHERE cim = "Toy Story";
+
+UPDATE filmek
+SET megjelenesi_ev = 1999
+WHERE cim = "Matrix";
+
+UPDATE filmek
+SET cim = "A tégla (felújított kiadás)",
+    ertekeles = 8.9
+WHERE cim = "A tégla";
